@@ -1,19 +1,24 @@
 {
-  "name": "http-mitm-proxy",
-  "version": "0.6.1",
-  "description": "HTTP Man In The Middle (MITM) Proxy",
-  "main": "index.js",
-  "types": "index.d.ts",
-  "scripts": {
-    "test": "mocha"
-  },
-  "repository": "https://github.com/joeferner/node-http-mitm-proxy",
-  "bugs": {
-    "url": "https://github.com/joeferner/node-http-mitm-proxy/issues"
-  },
   "bin": {
-    "http-mitm-proxy": "./bin/mitm-proxy.js"
+    "http-mitm-proxy-maximus": "./bin/mitm-proxy.js"
   },
+  "bundleDependencies": false,
+  "dependencies": {
+    "async": "^2.5.0",
+    "mkdirp": "^0.5.1",
+    "node-forge": "^0.7.1",
+    "optimist": "^0.6.1",
+    "semaphore": "^1.1.0",
+    "ws": "^3.2.0"
+  },
+  "deprecated": false,
+  "description": "HTTP Man In The Middle (MITM) Proxy",
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "node-static": "^0.7.10",
+    "request": "^2.83.0"
+  },
+  "homepage": "https://github.com/bymaximus/node-http-mitm-proxy#readme",
   "keywords": [
     "mitm",
     "http",
@@ -22,23 +27,16 @@
     "websocket",
     "proxy"
   ],
-  "author": "Joe Ferner <joe@fernsroth.com>",
-  "contributors": [
-    "Félicien François <felicien@tweakstyle.com>",
-    "Simon Pratt <simon@pr4tt.com>"
-  ],
   "license": "MIT",
-  "devDependencies": {
-    "mocha": "^4.0.1",
-    "request": "^2.83.0",
-    "node-static": "^0.7.10"
+  "main": "index.js",
+  "name": "http-mitm-proxy-maximus",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bymaximus/node-http-mitm-proxy.git"
   },
-  "dependencies": {
-    "async": "^2.5.0",
-    "mkdirp": "^0.5.1",
-    "node-forge": "^0.7.1",
-    "optimist": "^0.6.1",
-    "semaphore": "^1.1.0",
-    "ws": "^3.2.0"
-  }
+  "scripts": {
+    "test": "mocha"
+  },
+  "types": "index.d.ts",
+  "version": "0.6.1"
 }
